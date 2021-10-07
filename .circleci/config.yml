@@ -12,7 +12,7 @@ jobs:
       - checkout
       - run: systeminfo
       - run:
-          name: "Check docker"
+          name: "测试"
           shell: cmd.exe
           command: |
             echo %cd%
