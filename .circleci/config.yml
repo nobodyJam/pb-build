@@ -9,10 +9,13 @@ jobs:
       name: win/default
       shell: powershell.exe
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "98:ab:2b:30:60:00:82:86:bb:85:db:87:22:c4:4f:b1"
       - checkout
-      - run: systeminfo
+      # - run: systeminfo
       - run:
           name: "测试"
           shell: cmd.exe
           command: |
-            echo %cd%
+            ./testgit.bat
