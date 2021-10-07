@@ -15,4 +15,4 @@ jobs:
           name: "Check docker"
           shell: cmd.exe
           command: |
-            echo hello
+            echo %cd%
