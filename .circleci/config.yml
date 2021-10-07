@@ -18,4 +18,4 @@ jobs:
           name: "测试"
           shell: cmd.exe
           command: |
-            ./testgit.bat
+            testgit.bat
