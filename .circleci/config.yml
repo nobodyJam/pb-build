@@ -13,7 +13,6 @@ jobs:
       - run: systeminfo
       - run:
           name: "Check docker"
-          shell: powershell.exe
+          shell: cmd.exe
           command: |
-            docker info
-            docker run hello-world:nanoserver-1809
+            echo hello
